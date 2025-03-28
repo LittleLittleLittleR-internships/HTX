@@ -1,0 +1,59 @@
+.main-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-div {
+    margin: 5vh 10vw;
+}
+
+/* Style the input field */
+.search-input {
+    width: 30vw;
+    height: 5vh;
+    padding: 8px;
+    border-bottom: 2px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Blue highlight when input is focused */
+.search-input:focus {
+    border-bottom-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Remove dots from list */
+ul {
+    list-style: none; /* Removes bullets */
+    padding: 8px;
+    margin: 0;
+}
+
+/* Style search result buttons */
+ul li button {
+    width: 30vw;  /* Same as input field */
+    height: 5vh;  /* Same as input field */
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: left;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Add hover effect */
+ul li button:hover {
+    background-color: #f0f0f0; /* Light grey on hover */
+}
+
+.minimap {
+    margin: 5vh 0;
+}
